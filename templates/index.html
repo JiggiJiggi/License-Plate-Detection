@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Plate Detection</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?car') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 100px auto;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .container h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .container input[type="file"] {
+            display: none;
+        }
+        .file-label {
+            display: inline-block;
+            background: #ff9800;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            transition: background 0.3s ease;
+        }
+        .file-label:hover {
+            background: #e67e22;
+        }
+        .submit-btn {
+            background: #4caf50;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background 0.3s ease;
+        }
+        .submit-btn:hover {
+            background: #388e3c;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>License Plate Detection</h1>
+    </header>
+    <div class="container">
+        <h2>Upload Your Car Video</h2>
+        <form action="/process" method="POST" enctype="multipart/form-data">
+            <input type="file" name="video" id="video" accept="video/*" required>
+            <label for="video" class="file-label">Choose Video File</label>
+            <br>
+            <button type="submit" class="submit-btn">Upload and Process</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2024 License Plate Detection | All rights reserved.
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
